@@ -24,6 +24,7 @@ body {
 }
 
 
+
 .header{
     font-family: bitop;
     font-size: 100px;
@@ -37,6 +38,21 @@ body {
     background-color: hsla(0 , 0% , 0% , .3 );
 }
 
+
+.instructions{
+    font-family: bitop;
+    color: white;
+    display: flex;
+    font-size: 42px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+span > img{
+    height: 42px;
+    width: 180px;
+}
+
 #background{
     display: flex;
     flex-direction: column;
@@ -45,7 +61,7 @@ body {
 }
 
 .player{
-    margin: 200px;
+    margin: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -64,9 +80,75 @@ button > img{
 }
 
 .player > button{
-    border-color: #d04838;
+    /* border-color: #d04838; */
     border-style: solid;
     border-width: 16px;
     border-radius: 18px;
+    /* background-color: #68a0a0; */
+}
+
+
+.fire{
+    background-color: hsl(29,97%,65%);
+    border-color: hsl(29,97%,45%);
+
+}
+
+.water{
+    background-color: hsl(211,66%,58%);
+    border-color: hsl(211,66%,48%);
+
+}
+
+.grass{
+    background-color: hsl(112, 44%, 53%);
+    border-color: hsl(112, 44%, 35%);
+}
+
+
+.scoreboard{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.sprite > img{
+    height: 150px;
+    width: 150px;
+}
+
+
+.score{
+    display: flex;
+    border-color: #d04838;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 18px;
+    padding: 8px;
+    padding-right: 48px;
     background-color: #68a0a0;
+    column-gap: 48px;
+    font-family: bitop;
+    color: white;
+
+}
+
+div > .sub_title{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.name{
+    font-family: bitop;
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+.c_score, .p_score, .c_move, .p_move{
+    font-weight: 300;
+    margin: left;
 }

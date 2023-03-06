@@ -8,18 +8,32 @@
     <body>
         <div id="background">
             <div class="header">POKEMON TYPE BATTLE</div>
-            <div class="score"></div>
-                <div class="player_score"></div>
-                <div class="computer_score"></div>
+
+            <div class="instructions"><span><img src="pictures/fire.png"></span> beats <span><img src="pictures/grass.png"></span>  |  <span><img src="pictures/grass.png"></span> beats <span><img src="pictures/water.png"></span>   |   <span><img src="pictures/water.png"></span> beats <span><img src="pictures/fire.png"></span></div>
+
 
             <div class="player"> 
                 <button class="fire"><img src="./pictures/Charizard.png"></button>
                 <button class="water"><img src="./pictures/Blastoise.png"></button>
                 <button class="grass"><img src="./pictures/Venasaur.png"></button>
             </div>
-            <div class="computer"> 
-                <div class="computer_move"></div>
-                <div class="message"></div>
+            <div class="scoreboard">
+                <div>
+                    <div class="name">PLAYER</div>
+                    <div class="score">
+                        <div class="sprite"><img src="./pictures/player.png"></div> 
+                        <div class="player_move sub_title">SCORE:</br><span class="p_score"> 0</span></div>
+                        <div class="message sub_title">LAST MOVE: </br><span class="p_move"> burh</span></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="name">COMPUTER</div>
+                    <div class="score">
+                        <div class="sprite"><img src="pictures/computer.png"></div> 
+                        <div class="computer_move sub_title">SCORE:</br><span class="c_score"> 0</span></div>
+                        <div class="message sub_title">LAST MOVE: </br><span class="c_move"> burh</span></div>
+                    </div>
+                </div>
             </div>
             <div class="footer"></div>
         </div>
