@@ -6,8 +6,9 @@
         <title>Rock, Paper, Scisscors - Rapols</title> 
     </head>
     <body>
-        <div id="background">
-            <div class="header">POKEMON TYPE BATTLE</div>
+        <div class="header">POKEMON TYPE BATTLE</div>
+        <div class="maincontent">
+            
 
             <div class="instructions"><span><img src="pictures/fire_ele.png"></span> beats <span><img src="pictures/grass_ele.png"></span>  |  <span><img src="pictures/grass_ele.png"></span> beats <span><img src="pictures/water_ele.png"></span>   |   <span><img src="pictures/water_ele.png"></span> beats <span><img src="pictures/fire_ele.png"></span></div>
 
@@ -17,13 +18,17 @@
                 <button class="btn water" data-typing="water_ele"><img src="./pictures/Blastoise.png" data-typing="water_ele"></button>
                 <button class="btn grass" data-typing="grass_ele"><img src="./pictures/Venasaur.png" data-typing="grass_ele"></button>
             </div>
+            <div class="result">
+                <div class="result_mess">PLAY YOUR MOVE!</div>
+                <div><button class="reset">Do another round?</button></div>
+            </div>   
             <div class="scoreboard">
                 <div>
                     <div class="name">PLAYER</div>
                     <div class="score">
                         <div class="sprite"><img src="./pictures/player.png"></div> 
                         <div class="player_move sub_title">SCORE:</br><span class="p_score"> 0</span></div>
-                        <div class="message sub_title">LAST MOVE: </br><span class="p_move"> burh</span></div>
+                        <div class="message sub_title">LAST MOVE: </br><span class="p_move">???</span></div>
                     </div>
                 </div>
                 <div>
@@ -31,12 +36,13 @@
                     <div class="score">
                         <div class="sprite"><img src="pictures/computer.png"></div> 
                         <div class="computer_move sub_title">SCORE:</br><span class="c_score">0</span></div>
-                        <div class="message sub_title">LAST MOVE: </br><span class="c_move"> burh</span></div>
+                        <div class="message sub_title">LAST MOVE: </br><span class="c_move">???</span></div>
                     </div>
                 </div>
             </div>
-            <div class="footer"></div>
+           
         </div>
+        <div class="footer"> Copyright © 2023 antonifhecodes </div>
     </body>
     <script src="main_scripts.js"></script>
 </html>

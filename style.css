@@ -20,6 +20,11 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -52,11 +57,12 @@ span > img{
     height: 3.4vh;
 }
 
-#background{
-    display: flex;
+.maincontent{
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
+    flex: 1;
 }
 
 .player{
@@ -74,9 +80,10 @@ span > img{
 
 
 button > img{
-    padding: 1vh;
+    padding: 4vh;
     height: 22vh;
     /* width: 30vw; */
+
 }
 
 .player > button{
@@ -158,4 +165,42 @@ div > .sub_title{
 
 .player_move,.computer_move, .message{
     text-align: center;
+}
+
+
+
+.footer{
+    font-family: bitop;
+    font-size: 2vh;
+    padding: 1vh;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    background-color: hsla(0 , 0% , 0% , .3 );
+}
+
+.result{
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.result_mess{
+    font-family: bitop;
+    font-weight: bold;
+    font-size: 5vh;
+    color: white;
+    flex:0;
+
+}
+
+.reset{
+    visibility: hidden;
+    font-family: bitop;
+    font-size: 2vh;
+    /* text-align: center; */
 }
