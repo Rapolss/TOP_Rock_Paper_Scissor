@@ -18,7 +18,10 @@ let c_p = 0;
 function playRound(e){
     const move = e.target;
     const types = move.dataset.typing;
+    
     console.log(types);
+
+    this.classList.add('playing');
 
     battleRound(types);
 
@@ -26,7 +29,8 @@ function playRound(e){
     p_score_t.innerHTML = (u_p);
 
     endGame();
-
+    // this.classList.remove('playing');
+    // removeTransition();
 
     // grass_ele
     // fire_ele
@@ -107,7 +111,10 @@ function resetGame(){
 
 }
       
-
+function removeTransition(e){ 
+    if(e.propertyName !== 'transform') return; 
+    this.classList.remove('playing'); 
+  }
 
 
 
@@ -117,4 +124,5 @@ function resetGame(){
 // // event listeners
 
 buttons.forEach(button => button.addEventListener('click', playRound));
+buttons.forEach(button => button.addEventListener('transitionend', removeTransition));
 resetbutton.addEventListener('click',resetGame);
