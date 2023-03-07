@@ -19,7 +19,6 @@ function playRound(e){
     const move = e.target;
     const types = move.dataset.typing;
     
-    console.log(types);
 
     this.classList.add('playing');
 
@@ -29,12 +28,6 @@ function playRound(e){
     p_score_t.innerHTML = (u_p);
 
     endGame();
-    // this.classList.remove('playing');
-    // removeTransition();
-
-    // grass_ele
-    // fire_ele
-    // water_ele
 }
 
 
@@ -97,6 +90,7 @@ function endGame(){
         buttons.forEach(button => button.disabled = true);
     }
 }
+
 function resetGame(){
     resetbutton.style.visibility="hidden";
     c_p = 0;
@@ -106,7 +100,10 @@ function resetGame(){
     resultmessage.innerHTML = (`PLAY YOUR MOVE!`);
     c_score_t.innerHTML = (c_p);
     p_score_t.innerHTML = (u_p);
-
+    p_move_t.innerHTML = ("???");
+    c_move_t.innerHTML = ("???");
+    
+    buttons.forEach(button => button.classList.add('playing'));
 
 
 }
@@ -114,14 +111,12 @@ function resetGame(){
 function removeTransition(e){ 
     if(e.propertyName !== 'transform') return; 
     this.classList.remove('playing'); 
-  }
+}
 
 
 
 
-
-
-// // event listeners
+// event listeners
 
 buttons.forEach(button => button.addEventListener('click', playRound));
 buttons.forEach(button => button.addEventListener('transitionend', removeTransition));
