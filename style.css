@@ -27,8 +27,8 @@ body {
 
 .header{
     font-family: bitop;
-    font-size: 100px;
-    padding: 32px;
+    font-size: 7vh;
+    padding: 3vh;
     font-weight: bold;
     color: white;
     display: flex;
@@ -43,14 +43,13 @@ body {
     font-family: bitop;
     color: white;
     display: flex;
-    font-size: 42px;
-    margin-top: 40px;
+    font-size: 3.4vh;
+    margin-top: 3vh;
     justify-content: center;
 }
 
 span > img{
-    height: 42px;
-    width: 180px;
+    height: 3.4vh;
 }
 
 #background{
@@ -61,11 +60,12 @@ span > img{
 }
 
 .player{
-    margin: 100px;
+    margin: 5vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
+    justify-content: center;
+    gap: 5vw;
+    /* align-content: center; */
     flex: 1 0 300px;
 
 
@@ -74,16 +74,16 @@ span > img{
 
 
 button > img{
-    padding: 16px;
-    height: 300px;
-    width: 300px;
+    padding: 1vh;
+    height: 22vh;
+    /* width: 30vw; */
 }
 
 .player > button{
     /* border-color: #d04838; */
     border-style: solid;
-    border-width: 16px;
-    border-radius: 18px;
+    border-width: 1vh;
+    border-radius: 1vh;
     /* background-color: #68a0a0; */
 }
 
@@ -113,8 +113,8 @@ button > img{
 }
 
 .sprite > img{
-    height: 150px;
-    width: 150px;
+    height: 12vh;
+    width: 12vh;
 }
 
 
@@ -135,12 +135,12 @@ button > img{
 
 div > .sub_title{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 3vh;
 }
 
 .name{
     font-family: bitop;
-    font-size: 64px;
+    font-size: 4vh;
     font-weight: bold;
     color: white;
     display: flex;
@@ -151,4 +151,11 @@ div > .sub_title{
 .c_score, .p_score, .c_move, .p_move{
     font-weight: 300;
     margin: left;
+    /* text-align: center; */
+    /* margin-top: 20px; */
+    font-size: 7vh;
+}
+
+.player_move,.computer_move, .message{
+    text-align: center;
 }
