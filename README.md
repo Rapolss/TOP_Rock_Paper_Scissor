@@ -4,5 +4,7 @@ A spin on the rock paper scissor game that uses the three starting elements intr
 # Feature
 - Interactive buttons for each element.
 - A display that shows the current score and the last played element by each trainer.
+- A message box that display if you win or lose the game or round.
+- A reset button when someone hits 5 points.
 
 [Click Here to View] (https://rapolss.github.io/TOP_Rock_Paper_Scissor/)
